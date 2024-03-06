@@ -1,5 +1,5 @@
 import unittest
-from ..main.lab import create_list, modify_list, slice_list
+from src.main.lab import create_list, modify_list, slice_list
 
 class TestLabFunctions(unittest.TestCase):
     def test_create_list_positive(self):
