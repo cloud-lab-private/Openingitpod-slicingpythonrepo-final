@@ -1,6 +1,6 @@
 def create_list(n):
     """
-    Instead of returning 0, this method should Create a list of numbers from 1 to n and return it.
+    Create a list of numbers from 1 to n and return it.
 
     :param n: The number of elements in the list.
     :return: The created list.
@@ -12,7 +12,7 @@ def create_list(n):
     """
     if n <= 0:
         raise ValueError("Number of elements must be positive")
-    return list(range(1,n+1))
+    return list(range(1, n + 1))
 
 def modify_list(my_list, value_to_append=None, value_to_insert=None, value_to_remove=None):
     """
@@ -24,22 +24,20 @@ def modify_list(my_list, value_to_append=None, value_to_insert=None, value_to_re
     :param value_to_remove: The value to remove from the list (default is None).
     """
     if value_to_append is not None:
-        # Write your code here to append the value to the list.
-    
+        my_list.append(value_to_append)
+
     if value_to_insert is not None:
-        # Write your code here to insert the element in the beginning of the list
-            
+        my_list.insert(0, value_to_insert)
+
     if value_to_remove is not None:
-        # Write your code here to remove the element from the list.
+        my_list.remove(value_to_remove)
 
 def slice_list(my_list, start=0, end=3):
     """
-   Instead of returning 0 this method should Slice the list and return the sliced string.
+    Slice the list and return the sliced list.
 
     :param my_list: The list to slice.
     :param start: The starting index for slicing (default is 0).
     :param end: The ending index for slicing (default is 3).
     """
-    # Write your code here
-    return 0
-
+    return my_list[start:end]
